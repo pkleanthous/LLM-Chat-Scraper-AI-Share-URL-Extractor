@@ -1,4 +1,5 @@
-# Live Chat Scraper – AI Share URL Extractor
+# LLM Chat Scraper – AI Share URL Extractor
+Identify what people are querying AI for
 
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue)](https://www.python.org/)  
 [![Playwright](https://img.shields.io/badge/Playwright-Automation-green)](https://playwright.dev/)  
@@ -6,15 +7,10 @@
 
 A Python tool that scrapes chat content from **live share URLs** of **ChatGPT, Claude, and Grok**.
 
-It first pulls URLs from the **Web Archive CDX API**:
+It first pulls URLs from the **Web Archive CDX API**, then it uses **Playwright** to open each live page, handle JavaScript-rendered content, strip out UI clutter, and save only the **clean chat messages** to a text file.  
 
-- `https://web.archive.org/cdx/search/cdx?url=chatgpt.com/share/*&output=txt&collapse=urlkey&fl=original&page=/`
-- `https://web.archive.org/cdx/search/cdx?url=https://claude.ai/share/*&output=txt&collapse=urlkey&fl=original&page=/`
-- `https://web.archive.org/cdx/search/cdx?url=grok.com/s/*&output=txt&collapse=urlkey&fl=original&page=/`
-
-Then it uses **Playwright** to open each live page, handle JavaScript-rendered content, strip out UI clutter, and save only the **clean chat messages** to a text file.
-
-✨ Built for speed, simplicity, and fun – and of course, **vibe coded using AI** 🤖
+✨ Built for speed, simplicity, and fun – and of course, **vibe coded using AI** 🤖  
+⭐ If you found this useful, don’t forget to star the repo!
 
 ---
 
